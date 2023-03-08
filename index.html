@@ -134,7 +134,15 @@
 
 	<!--------------------------- Footer ----------------------------------->
 	<footer>
-		<p>&copy; 2023 Shape Up!</p>
+		<p>&copy; <span id="copyright"></span> Shape Up!</p>
 	</footer>
+	
+	<script>
+        	window.onload = function() {
+            		var d = new Date();
+            		document.getElementById("copyright").innerHTML = d.getFullYear();
+        	}
+    	</script>
+	
 </body>
-</html>
+<!-- </html> -->
